@@ -24,7 +24,7 @@ fun main(args: Array<String>) {
         routing {
             route("{path...}") {
                 get {
-                    val waitFor = call.request.header("MOK-DELAY-MS")?.toLong()
+                    val waitFor = (call.request.header("MOK-DELAY-MS") ?: call.parameters["mok-delay-ms"])?.toLong()
                     if (waitFor != null)
                         delay(waitFor)
                     val response = config.findResponse(call.request.path(), call.parameters, call.request.headers)

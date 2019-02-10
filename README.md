@@ -9,7 +9,7 @@ You can match:
 
 You can replace values on the response payload with values on the headers or query string for enhanced flexibility
 
-Using the header `MOK-DELAY-MS`you can inject a delay per request in milliseconds, if you need control the response latency.
+Using the header `MOK-DELAY-MS` or the param `mok-delay-ms` you can inject a delay per request in milliseconds, if you need control the response latency.
 
 Current performance (the highest CPU was achieved during a 10000TPS test)
 
