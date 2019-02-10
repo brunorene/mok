@@ -8,3 +8,7 @@ You can match:
 * Query parameters
 
 You can also replace values on the response payload with values on the headers or query string for enhanced flexibility
+
+Current performance (the highest CPU was achieved during a 10000TPS test)
+
+![Performance](PerformanceMok.png)
